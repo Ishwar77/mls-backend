@@ -1,0 +1,3438 @@
+{
+	"info": {
+		"_postman_id": "b7ac490b-fb4e-4a96-85fb-10d996cdcbfb",
+		"name": "MLS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Sponsor",
+			"item": [
+				{
+					"name": "Get All Sponsor List (both isActive=true and isActive=false)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://maiora-life-sciences.herokuapp.com/api/sponsor/",
+							"protocol": "https",
+							"host": [
+								"maiora-life-sciences",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"sponsor",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Getting All Active Sponsors (i.e: isActive=true)",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://maiora-life-sciences.herokuapp.com/api/sponsor/getActiveSponsors",
+							"protocol": "https",
+							"host": [
+								"maiora-life-sciences",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"sponsor",
+								"getActiveSponsors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Getting All the Sponsor on _ID",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://maiora-life-sciences.herokuapp.com/api/sponsor/6108e2bcb4b2a81740ddc04e",
+							"protocol": "https",
+							"host": [
+								"maiora-life-sciences",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"sponsor",
+								"6108e2bcb4b2a81740ddc04e"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Adding New Sponsor",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"description\": \"Description SPR-4\",\r\n    \"isActive\": true,\r\n    \"name\": \"SPR-4\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://maiora-life-sciences.herokuapp.com/api/sponsor/create",
+							"protocol": "https",
+							"host": [
+								"maiora-life-sciences",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"sponsor",
+								"create"
+							]
+						},
+						"description": "{\r\n    \"name\": \"SPR-2\",\r\n    \"description\": \"Description of SPR-2\"\r\n}"
+					},
+					"response": []
+				},
+				{
+					"name": "Updating Sponsor on _ID",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"description\": \"Description SPR-3\",\r\n    \"isActive\": true,\r\n    \"name\": \"SPR-3\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://maiora-life-sciences.herokuapp.com/api/sponsor/6108e9cb45cb090c10f561d7",
+							"protocol": "https",
+							"host": [
+								"maiora-life-sciences",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"sponsor",
+								"6108e9cb45cb090c10f561d7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Sponsor on _ID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://maiora-life-sciences.herokuapp.com/api/sponsor/6108e2bcb4b2a81740ddc04e",
+							"protocol": "https",
+							"host": [
+								"maiora-life-sciences",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"sponsor",
+								"6108e2bcb4b2a81740ddc04e"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Study",
+			"item": [
+				{
+					"name": "Get All Study List (both isActive=true and isActive=false)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://maiora-life-sciences.herokuapp.com/api/study/",
+							"protocol": "https",
+							"host": [
+								"maiora-life-sciences",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"study",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Getting All Active Study (i.e: isActive = true)",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://maiora-life-sciences.herokuapp.com/api/study/getActiveStudies",
+							"protocol": "https",
+							"host": [
+								"maiora-life-sciences",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"study",
+								"getActiveStudies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Getting All Study on _ID",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://maiora-life-sciences.herokuapp.com/api/study/61094f862339c24598ff59cd",
+							"protocol": "https",
+							"host": [
+								"maiora-life-sciences",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"study",
+								"61094f862339c24598ff59cd"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Getting All Study on Sponsor_ID",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://maiora-life-sciences.herokuapp.com/api/study/sponsorid/6108df12c250e7015cf5f086",
+							"protocol": "https",
+							"host": [
+								"maiora-life-sciences",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"study",
+								"sponsorid",
+								"6108df12c250e7015cf5f086"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Adding New Study",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n            \"sponsor_id\": \"6108df12c250e7015cf5f086\", \r\n            \"title\": \"STDY - 3\", \r\n            \"description\": \"STDY - 3 Description\", \r\n            \"version\": \"VER - 3\", \r\n            \"docPath\": \"https://maiora-life-sciences.s3.amazonaws.com/study/alsDoc/ALS.xlsx\", \r\n            \"signature\": \"SIGNATURE\",\r\n            \"studyStatus\": \"STAGING\",\r\n            \"rawData\": \"RAW DATA\",\r\n            \"sampleFilePath\": \"https://maiora-life-sciences.s3.amazonaws.com/study/alsDoc/ALS.xlsx\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://maiora-life-sciences.herokuapp.com/api/study/create",
+							"protocol": "https",
+							"host": [
+								"maiora-life-sciences",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"study",
+								"create"
+							]
+						},
+						"description": "{\r\n            \"sponsor_id\": \"6108df12c250e7015cf5f086\", \r\n            \"title\": \"STDY - 2\", \r\n            \"description\": \"STDY - 2 Description\", \r\n            \"deleteExisting\": \"NO\", \r\n            \"projectName\": \"PRJCT - 2\", \r\n            \"projectType\": \"PRJCT - TYPE\",\r\n            \"primaryFormOID\": \"FORM - ID - 2\", \r\n            \"DefaultMatrixOID\": \"DFTM - 2\", \r\n            \"confirmMessage\": \"MESSAGE - CONFIRM\", \r\n            \"version\": \"VER - 2\", \r\n            \"docPath\": \"/root/PATH-2\", \r\n            \"signature\": \"SIGNATURE\"\r\n}"
+					},
+					"response": []
+				},
+				{
+					"name": "Updating Study on _ID",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n            \"sponsor_id\": \"6108df12c250e7015cf5f086\", \r\n            \"title\": \"STDY - 3\", \r\n            \"description\": \"STDY - 3 Description\", \r\n            \"version\": \"VER - 3\", \r\n            \"docPath\": \"https://maiora-life-sciences.s3.amazonaws.com/study/alsDoc/ALS.xlsx\", \r\n            \"signature\": \"SIGNATURE\",\r\n            \"studyStatus\": \"STAGING\",\r\n            \"rawData\": \"RAW DATA\",\r\n            \"sampleFilePath\": \"https://maiora-life-sciences.s3.amazonaws.com/study/alsDoc/ALS.xlsx\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://maiora-life-sciences.herokuapp.com/api/study/61094f862339c24598ff59cd",
+							"protocol": "https",
+							"host": [
+								"maiora-life-sciences",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"study",
+								"61094f862339c24598ff59cd"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "RUN MAP Copy",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n            \"rawData\": \"RAW\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/study/runmap/611666a180782f00169aa4e4",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"study",
+								"runmap",
+								"611666a180782f00169aa4e4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Study on _ID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://maiora-life-sciences.herokuapp.com/api/study/61094f862339c24598ff59cd",
+							"protocol": "https",
+							"host": [
+								"maiora-life-sciences",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"study",
+								"61094f862339c24598ff59cd"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ALS-Staging",
+			"item": [
+				{
+					"name": "Get All ALS-Staging List (both isActive=true and isActive=false)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://maiora-life-sciences.herokuapp.com/api/alsStaging/",
+							"protocol": "https",
+							"host": [
+								"maiora-life-sciences",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"alsStaging",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Getting All Active ALS-Staging (i.e: isActive = true)",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://maiora-life-sciences.herokuapp.com/api/alsStaging/getActiveAlsStaging",
+							"protocol": "https",
+							"host": [
+								"maiora-life-sciences",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"alsStaging",
+								"getActiveAlsStaging"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All ALS-Staging on _ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://maiora-life-sciences.herokuapp.com/api/alsStaging/610a382e36aa491534c33266",
+							"protocol": "https",
+							"host": [
+								"maiora-life-sciences",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"alsStaging",
+								"610a382e36aa491534c33266"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Getting All AlsStaging Data on _StudyID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://maiora-life-sciences.herokuapp.com/api/alsStaging/studyid/61094f6b2339c24598ff59cb",
+							"protocol": "https",
+							"host": [
+								"maiora-life-sciences",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"alsStaging",
+								"studyid",
+								"61094f6b2339c24598ff59cb"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Getting All Latest-Version AlsStaging Data on _StudyID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/alsStaging/latestversion/study/613f08e335cfb64900dc2a55",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"alsStaging",
+								"latestversion",
+								"study",
+								"613f08e335cfb64900dc2a55"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Adding New ALS-Staging Data",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"study_UUID\": \"61094f6b2339c24598ff59cb\", \r\n    \"version\": \"VER - 2\", \r\n    \"entityType\": \"ENTY - TYP - 2\", \r\n    \"columns\": \"COLUMN - DETAILS\", \r\n    \"creating_user_uuid\": \"CREATING - USER - UUID - 2\", \r\n    \"status\": \"STATUS - 2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://maiora-life-sciences.herokuapp.com/api/alsstaging/create",
+							"protocol": "https",
+							"host": [
+								"maiora-life-sciences",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"alsstaging",
+								"create"
+							]
+						},
+						"description": "{\r\n    \"study_UUID\": \"61094f6b2339c24598ff59cb\", \r\n    \"version\": \"VER - 1\", \r\n    \"entityType\": \"ENTY - TYP - 1\", \r\n    \"columns\": \"COLUMN - DETAILS\", \r\n    \"creating_user_uuid\": \"CREATING - USER - UUID - 1\", \r\n    \"status\": \"STATUS - 1\"\r\n}"
+					},
+					"response": []
+				},
+				{
+					"name": "Bulk Creation of ALS-Staging",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[{\r\n    \"study_UUID\": \"61094f6b2339c24598ff59cb\", \r\n    \"version\": \"VER - 3\", \r\n    \"entityType\": \"ENTY - TYP - 3\", \r\n    \"columns\": \"COLUMN - DETAILS\", \r\n    \"creating_user_uuid\": \"CREATING - USER - UUID - 3\", \r\n    \"status\": \"STATUS - 3\"\r\n},\r\n{\r\n    \"study_UUID\": \"61094f6b2339c24598ff59cb\", \r\n    \"version\": \"VER - 4\", \r\n    \"entityType\": \"ENTY - TYP - 4\", \r\n    \"columns\": \"COLUMN - DETAILS\", \r\n    \"creating_user_uuid\": \"CREATING - USER - UUID - 4\", \r\n    \"status\": \"STATUS - 4\"\r\n},\r\n{\r\n    \"study_UUID\": \"61094f6b2339c24598ff59cb\", \r\n    \"version\": \"VER - 5\", \r\n    \"entityType\": \"ENTY - TYP - 5\", \r\n    \"columns\": \"COLUMN - DETAILS\", \r\n    \"creating_user_uuid\": \"CREATING - USER - UUID - 5\", \r\n    \"status\": \"STATUS - 5\"\r\n}\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://maiora-life-sciences.herokuapp.com/api/alsstaging/bulkCreate",
+							"protocol": "https",
+							"host": [
+								"maiora-life-sciences",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"alsstaging",
+								"bulkCreate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Updating ALS-Staging Data on _ID",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"status\": \"PENDING\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://maiora-life-sciences.herokuapp.com/api/alsstaging/610a382e36aa491534c33266",
+							"protocol": "https",
+							"host": [
+								"maiora-life-sciences",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"alsstaging",
+								"610a382e36aa491534c33266"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deleting ALS-Staging Data on _ID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://maiora-life-sciences.herokuapp.com/api/alsstaging/610a382e36aa491534c33266",
+							"protocol": "https",
+							"host": [
+								"maiora-life-sciences",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"alsstaging",
+								"610a382e36aa491534c33266"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "STAGING THE DATA - CREATING STUDY HIERARCHY Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"docPath\": \"https://maiora-life-sciences.s3.amazonaws.com/study/alsDoc/ALS.xlsx\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/alsStaging/staging/6112037f0946223afca14b47",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"alsStaging",
+								"staging",
+								"6112037f0946223afca14b47"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "FileUpload",
+			"item": [
+				{
+					"name": "s3Bucket File Upload SampleData",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": [
+										"/C:/Users/Admin/Downloads/1628249445105testing1 (1).xlsx",
+										"/C:/Users/Admin/Downloads/_1628248699731testing1 (1).xlsx"
+									]
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "https://maiora-life-sciences.herokuapp.com/api/upload/file/sample",
+							"protocol": "https",
+							"host": [
+								"maiora-life-sciences",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"upload",
+								"file",
+								"sample"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "s3Bucket File Upload ALSDoc",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/C:/Users/Admin/Downloads/ALS.xlsx"
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "https://maiora-life-sciences.herokuapp.com/api/upload/file/als",
+							"protocol": "https",
+							"host": [
+								"maiora-life-sciences",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"upload",
+								"file",
+								"als"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "s3Bucket File Upload SDTM",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/C:/Users/Admin/Downloads/SDTM-Data-ENROL.xlsx"
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/upload/file/sdtmupload",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"upload",
+								"file",
+								"sdtmupload"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "s3Bucket Re-Uploading ALSDoc",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/C:/Users/Admin/Desktop/ALS-VER-TEST.xlsx"
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/upload/file/reupload",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"upload",
+								"file",
+								"reupload"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Draft",
+			"item": [
+				{
+					"name": "Get All Drafts (Both Active and Inactive)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/draft/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"draft",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Active Drafts (i.e isActive=true)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/draft/getActiveDrafts",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"draft",
+								"getActiveDrafts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Drafts on _ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/draft/6110bf8942c0670c80d469ba",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"draft",
+								"6110bf8942c0670c80d469ba"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Drafts on Study_ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/draft/studyid/6108df12c250e7015cf5f086",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"draft",
+								"studyid",
+								"6108df12c250e7015cf5f086"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Adding a new Draft",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n            \"study_id\": \"6108df12c250e7015cf5f086\", \r\n            \"draftName\": \"DRAFT - 1\", \r\n            \"description\": \"DRAFT - 1 Description\", \r\n            \"deleteExisting\": \"NO\", \r\n            \"projectName\": \"PRJCT - 1\", \r\n            \"projectType\": \"PRJCT - TYPE\",\r\n            \"primaryFormOID\": \"FORM - ID - 1\", \r\n            \"DefaultMatrixOID\": \"DFTM - 1\", \r\n            \"confirmMessage\": \"MESSAGE - CONFIRM\", \r\n            \"version\": \"VER - 1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/draft/create",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"draft",
+								"create"
+							]
+						},
+						"description": "{\r\n            \"study_id\": \"6108df12c250e7015cf5f086\", \r\n            \"draftName\": \"DRAFT - 1\", \r\n            \"description\": \"DRAFT - 1 Description\", \r\n            \"deleteExisting\": \"NO\", \r\n            \"projectName\": \"PRJCT - 1\", \r\n            \"projectType\": \"PRJCT - TYPE\",\r\n            \"primaryFormOID\": \"FORM - ID - 1\", \r\n            \"DefaultMatrixOID\": \"DFTM - 1\", \r\n            \"confirmMessage\": \"MESSAGE - CONFIRM\", \r\n            \"version\": \"VER - 1\"\r\n}"
+					},
+					"response": []
+				},
+				{
+					"name": "Bulk Creation of Draft",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[{\r\n            \"study_id\": \"6108df12c250e7015cf5f086\", \r\n            \"draftName\": \"DRAFT - 1\", \r\n            \"description\": \"DRAFT - 1 Description\", \r\n            \"deleteExisting\": \"NO\", \r\n            \"projectName\": \"PRJCT - 1\", \r\n            \"projectType\": \"PRJCT - TYPE\",\r\n            \"primaryFormOID\": \"FORM - ID - 1\", \r\n            \"DefaultMatrixOID\": \"DFTM - 1\", \r\n            \"confirmMessage\": \"MESSAGE - CONFIRM\", \r\n            \"version\": \"VER - 1\"\r\n},\r\n{\r\n            \"study_id\": \"6108df12c250e7015cf5f086\", \r\n            \"draftName\": \"DRAFT - 1\", \r\n            \"description\": \"DRAFT - 1 Description\", \r\n            \"deleteExisting\": \"NO\", \r\n            \"projectName\": \"PRJCT - 1\", \r\n            \"projectType\": \"PRJCT - TYPE\",\r\n            \"primaryFormOID\": \"FORM - ID - 1\", \r\n            \"DefaultMatrixOID\": \"DFTM - 1\", \r\n            \"confirmMessage\": \"MESSAGE - CONFIRM\", \r\n            \"version\": \"VER - 1\"\r\n},\r\n{\r\n            \"study_id\": \"6108df12c250e7015cf5f086\", \r\n            \"draftName\": \"DRAFT - 1\", \r\n            \"description\": \"DRAFT - 1 Description\", \r\n            \"deleteExisting\": \"NO\", \r\n            \"projectName\": \"PRJCT - 1\", \r\n            \"projectType\": \"PRJCT - TYPE\",\r\n            \"primaryFormOID\": \"FORM - ID - 1\", \r\n            \"DefaultMatrixOID\": \"DFTM - 1\", \r\n            \"confirmMessage\": \"MESSAGE - CONFIRM\", \r\n            \"version\": \"VER - 1\"\r\n}]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/draft/bulkCreate",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"draft",
+								"bulkCreate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Updating Draft on _ID",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n            \"study_id\": \"6108df12c250e7015cf5f086\", \r\n            \"draftName\": \"DRAFT - 1\", \r\n            \"description\": \"DRAFT - 1 Description\", \r\n            \"deleteExisting\": \"NO\", \r\n            \"projectName\": \"PRJCT - 1\", \r\n            \"projectType\": \"PRJCT - TYPE\",\r\n            \"primaryFormOID\": \"FORM - ID - 1\", \r\n            \"DefaultMatrixOID\": \"DFTM - 1\", \r\n            \"confirmMessage\": \"MESSAGE - CONFIRM\", \r\n            \"version\": \"VER - 1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/draft/6110bf8942c0670c80d469ba",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"draft",
+								"6110bf8942c0670c80d469ba"
+							]
+						},
+						"description": "{\r\n            \"study_id\": \"6108df12c250e7015cf5f086\", \r\n            \"draftName\": \"DRAFT - 1\", \r\n            \"description\": \"DRAFT - 1 Description\", \r\n            \"deleteExisting\": \"NO\", \r\n            \"projectName\": \"PRJCT - 1\", \r\n            \"projectType\": \"PRJCT - TYPE\",\r\n            \"primaryFormOID\": \"FORM - ID - 1\", \r\n            \"DefaultMatrixOID\": \"DFTM - 1\", \r\n            \"confirmMessage\": \"MESSAGE - CONFIRM\", \r\n            \"version\": \"VER - 1\"\r\n}"
+					},
+					"response": []
+				},
+				{
+					"name": "Deleting Draft on _ID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/draft/6110bf8942c0670c80d469ba",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"draft",
+								"6110bf8942c0670c80d469ba"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Latest-Version Drafts on Study_ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/draft/latestversion/study/6138c97f8a5b4938ac058ad2",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"draft",
+								"latestversion",
+								"study",
+								"6138c97f8a5b4938ac058ad2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Folder",
+			"item": [
+				{
+					"name": "Get All Folders(Both Active and Inactive)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/folder/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"folder",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Active Folders(i.e isActive = true)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/folder/getActiveFolders",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"folder",
+								"getActiveFolders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Folders on _ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/folder/6108df12c250e7015cf5f086",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"folder",
+								"6108df12c250e7015cf5f086"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Folders on Study_ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/folder/studyid/6108df12c250e7015cf5f086",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"folder",
+								"studyid",
+								"6108df12c250e7015cf5f086"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Adding a new Folder",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"study_id\": \"6108df12c250e7015cf5f086\", \r\n    \"oid\": \"AE\", \r\n    \"ordinal\": \"6\", \r\n    \"folderName\": \"Adverse Event\", \r\n    \"parentFolderOID\": \"POID\", \r\n    \"isReusable\": \"true\",\r\n    \"version\": \"V1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/folder/create",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"folder",
+								"create"
+							]
+						},
+						"description": "{\r\n    \"study_id\": \"6108df12c250e7015cf5f086\", \r\n    \"oid\": \"AE\", \r\n    \"ordinal\": \"6\", \r\n    \"folderName\": \"Adverse Event\", \r\n    \"parentFolderOID\": \"POID\", \r\n    \"isReusable\": \"true\",\r\n    \"version\": \"V1\"\r\n}"
+					},
+					"response": []
+				},
+				{
+					"name": "Bulk Creation of Folder",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[{\r\n    \"study_id\": \"6108df12c250e7015cf5f086\", \r\n    \"oid\": \"AE\", \r\n    \"ordinal\": \"6\", \r\n    \"folderName\": \"Adverse Event\", \r\n    \"parentFolderOID\": \"POID\", \r\n    \"isReusable\": \"true\",\r\n    \"version\": \"V1\"\r\n},\r\n{\r\n    \"study_id\": \"6108df12c250e7015cf5f086\", \r\n    \"oid\": \"AE\", \r\n    \"ordinal\": \"6\", \r\n    \"folderName\": \"Adverse Event\", \r\n    \"parentFolderOID\": \"POID\", \r\n    \"isReusable\": \"true\",\r\n    \"version\": \"V1\"\r\n}]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/folder/bulkCreate",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"folder",
+								"bulkCreate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Updating Folder on _ID",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"study_id\": \"6108df12c250e7015cf5f086\", \r\n    \"oid\": \"AE\", \r\n    \"ordinal\": \"6\", \r\n    \"folderName\": \"Adverse Event\", \r\n    \"parentFolderOID\": \"POID\", \r\n    \"isReusable\": \"true\",\r\n    \"version\": \"V1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/folder/6110cf1279c4341558e49520",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"folder",
+								"6110cf1279c4341558e49520"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deleting Folder on _ID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/folder/6110cf1279c4341558e49520",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"folder",
+								"6110cf1279c4341558e49520"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Latest Version Folders on Study_ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/folder/latestversion/study/6138c97f8a5b4938ac058ad2",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"folder",
+								"latestversion",
+								"study",
+								"6138c97f8a5b4938ac058ad2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Data Dictionary",
+			"item": [
+				{
+					"name": "Get All Data Dictionary(Both Active and Inactive)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/datadictionary/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"datadictionary",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Active Data Dictionary(i.e isActive = true)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/datadictionary/getActiveDataDictionary",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"datadictionary",
+								"getActiveDataDictionary"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Data Dictionary on _ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/datadictionary/6108df12c250e7015cf5f086",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"datadictionary",
+								"6108df12c250e7015cf5f086"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Data Dictionaryon Study_ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/datadictionary/studyid/6108df12c250e7015cf5f086",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"datadictionary",
+								"studyid",
+								"6108df12c250e7015cf5f086"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Adding a new Data Dictionary",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"study_id\": \"6108df12c250e7015cf5f086\", \r\n    \"dataDictionaryName\": \"DDN-1\", \r\n    \"codedData\": \"CD-1\", \r\n    \"ordinal\": 2, \r\n    \"userDataString\": \"UDS-1\", \r\n    \"specify\": \"SPY-1\",\r\n    \"version\": \"V1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/datadictionary/create",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"datadictionary",
+								"create"
+							]
+						},
+						"description": "{\r\n    \"study_id\": \"6108df12c250e7015cf5f086\", \r\n    \"dataDictionaryName\": \"DDN-1\", \r\n    \"codedData\": \"CD-1\", \r\n    \"ordinal\": 2, \r\n    \"userDataString\": \"UDS-1\", \r\n    \"specify\": \"SPY-1\",\r\n    \"version\": \"V1\"\r\n}"
+					},
+					"response": []
+				},
+				{
+					"name": "Bulk Creation of Data Dictionary",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[{\r\n    \"study_id\": \"6108df12c250e7015cf5f086\", \r\n    \"dataDictionaryName\": \"DDN-1\", \r\n    \"codedData\": \"CD-1\", \r\n    \"ordinal\": 2, \r\n    \"userDataString\": \"UDS-1\", \r\n    \"specify\": \"SPY-1\",\r\n    \"version\": \"V1\"\r\n},\r\n{\r\n    \"study_id\": \"6108df12c250e7015cf5f086\", \r\n    \"dataDictionaryName\": \"DDN-1\", \r\n    \"codedData\": \"CD-1\", \r\n    \"ordinal\": 2, \r\n    \"userDataString\": \"UDS-1\", \r\n    \"specify\": \"SPY-1\",\r\n    \"version\": \"V1\"\r\n}]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/datadictionary/bulkCreate",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"datadictionary",
+								"bulkCreate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Updating Data Dictionary on _id",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"study_id\": \"6108df12c250e7015cf5f086\", \r\n    \"dataDictionaryName\": \"DDN-1\", \r\n    \"codedData\": \"CD-1\", \r\n    \"ordinal\": 2, \r\n    \"userDataString\": \"UDS-1\", \r\n    \"specify\": \"SPY-1\",\r\n    \"version\": \"V1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/datadictionary/6110e18ce1571625188c46ae",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"datadictionary",
+								"6110e18ce1571625188c46ae"
+							]
+						},
+						"description": "{\r\n    \"study_id\": \"6108df12c250e7015cf5f086\", \r\n    \"dataDictionaryName\": \"DDN-1\", \r\n    \"codedData\": \"CD-1\", \r\n    \"ordinal\": 2, \r\n    \"userDataString\": \"UDS-1\", \r\n    \"specify\": \"SPY-1\",\r\n    \"version\": \"V1\"\r\n}"
+					},
+					"response": []
+				},
+				{
+					"name": "Deleting Data Dictionary on _ID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/datadictionary/6110e18ce1571625188c46ae",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"datadictionary",
+								"6110e18ce1571625188c46ae"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Latest Version Data Dictionaryon Study_ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/datadictionary/latestversion/study/61166a00c9f9d80016b1f3f4",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"datadictionary",
+								"latestversion",
+								"study",
+								"61166a00c9f9d80016b1f3f4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Matrix",
+			"item": [
+				{
+					"name": "Get All Matrix(Both Active and Inactive)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/matrix/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"matrix",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Active Matrix(i.e isActive = true)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/matrix/getActiveMatrix",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"matrix",
+								"getActiveMatrix"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Matrix on _ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/matrix/6108df12c250e7015cf5f086",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"matrix",
+								"6108df12c250e7015cf5f086"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Matrix on Study_ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/matrix/studyid/6108df12c250e7015cf5f086",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"matrix",
+								"studyid",
+								"6108df12c250e7015cf5f086"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Adding a new Matrix",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"study_id\": \"6108df12c250e7015cf5f086\", \r\n    \"matrixName\": \"name\", \r\n    \"oid\": \"oid\", \r\n    \"addable\": \"addable\", \r\n    \"maximum\": \"max\", \r\n    \"version\": \"V1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/matrix/create",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"matrix",
+								"create"
+							]
+						},
+						"description": "{\r\n    \"study_id\": \"6108df12c250e7015cf5f086\", \r\n    \"matrixName\": \"name\", \r\n    \"oid\": \"oid\", \r\n    \"addable\": \"addable\", \r\n    \"maximum\": \"max\", \r\n    \"version\": \"V1\"\r\n}"
+					},
+					"response": []
+				},
+				{
+					"name": "Bulk Creation of Matrix",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[{\r\n    \"study_id\": \"6108df12c250e7015cf5f086\", \r\n    \"matrixName\": \"name\", \r\n    \"oid\": \"oid\", \r\n    \"addable\": \"addable\", \r\n    \"maximum\": \"max\", \r\n    \"version\": \"V1\"\r\n},\r\n{\r\n    \"study_id\": \"6108df12c250e7015cf5f086\", \r\n    \"matrixName\": \"name\", \r\n    \"oid\": \"oid\", \r\n    \"addable\": \"addable\", \r\n    \"maximum\": \"max\", \r\n    \"version\": \"V1\"\r\n}]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/matrix/bulkCreate",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"matrix",
+								"bulkCreate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Updating Matrix on _ID",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"study_id\": \"6108df12c250e7015cf5f086\", \r\n    \"matrixName\": \"name\", \r\n    \"oid\": \"oid\", \r\n    \"addable\": \"addable\", \r\n    \"maximum\": \"max\", \r\n    \"version\": \"V1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/matrix/6110ee5b5856d11fa85c8aa1",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"matrix",
+								"6110ee5b5856d11fa85c8aa1"
+							]
+						},
+						"description": "{\r\n    \"study_id\": \"6108df12c250e7015cf5f086\", \r\n    \"matrixName\": \"name\", \r\n    \"oid\": \"oid\", \r\n    \"addable\": \"addable\", \r\n    \"maximum\": \"max\", \r\n    \"version\": \"V1\"\r\n}"
+					},
+					"response": []
+				},
+				{
+					"name": "Deleting Matrix on _ID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/matrix/6110ee5b5856d11fa85c8aa1",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"matrix",
+								"6110ee5b5856d11fa85c8aa1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Latest Version Matrix on Study_ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/matrix/latestversion/study/61166a00c9f9d80016b1f3f4",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"matrix",
+								"latestversion",
+								"study",
+								"61166a00c9f9d80016b1f3f4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Visits",
+			"item": [
+				{
+					"name": "Get All Visits(Both Active and Inactive)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/visits/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"visits",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Active Visits(i.e isActive = true)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/visits/getActiveVisit",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"visits",
+								"getActiveVisit"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Visits on _ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/visits/6108df12c250e7015cf5f086",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"visits",
+								"6108df12c250e7015cf5f086"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Visits on Study_ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/visits/studyid/6108df12c250e7015cf5f086",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"visits",
+								"studyid",
+								"6108df12c250e7015cf5f086"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Adding a new Visit",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"study_id\": \"6108df12c250e7015cf5f086\", \r\n    \"matrix_id\": \"611118327c88be49f450216c\",\r\n    \"subject\": \"subject\", \r\n    \"scrn\": \"scrn\", \r\n    \"visit1\": \"Visit1\", \r\n    \"cm\": \"CM\", \r\n    \"ae\": \"AE\", \r\n    \"version\": \"V1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/visits/create",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"visits",
+								"create"
+							]
+						},
+						"description": "{\r\n    \"study_id\": \"6108df12c250e7015cf5f086\", \r\n    \"matrix_id\": \"611118327c88be49f450216c\",\r\n    \"subject\": \"subject\", \r\n    \"scrn\": \"scrn\", \r\n    \"visit1\": \"Visit1\", \r\n    \"cm\": \"CM\", \r\n    \"ae\": \"AE\", \r\n    \"version\": \"V1\"\r\n}"
+					},
+					"response": []
+				},
+				{
+					"name": "Bulk Creation of Visits",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[{\r\n    \"study_id\": \"6108df12c250e7015cf5f086\", \r\n    \"matrix_id\": \"611118327c88be49f450216c\",\r\n    \"subject\": \"subject\", \r\n    \"scrn\": \"scrn\", \r\n    \"visit1\": \"Visit1\", \r\n    \"cm\": \"CM\", \r\n    \"ae\": \"AE\", \r\n    \"version\": \"V1\"\r\n},\r\n{\r\n    \"study_id\": \"6108df12c250e7015cf5f086\", \r\n    \"matrix_id\": \"611118327c88be49f450216c\",\r\n    \"subject\": \"subject\", \r\n    \"scrn\": \"scrn\", \r\n    \"visit1\": \"Visit1\", \r\n    \"cm\": \"CM\", \r\n    \"ae\": \"AE\", \r\n    \"version\": \"V1\"\r\n}]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/visits/bulkCreate",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"visits",
+								"bulkCreate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Updating Visit on _ID",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"study_id\": \"6108df12c250e7015cf5f086\", \r\n    \"matrix_id\": \"611118327c88be49f450216c\",\r\n    \"subject\": \"subject\", \r\n    \"scrn\": \"scrn\", \r\n    \"visit1\": \"Visit1\", \r\n    \"cm\": \"CM\", \r\n    \"ae\": \"AE\", \r\n    \"version\": \"V1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/visits/6111188f7c88be49f450216d",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"visits",
+								"6111188f7c88be49f450216d"
+							]
+						},
+						"description": "{\r\n    \"study_id\": \"6108df12c250e7015cf5f086\", \r\n    \"matrix_id\": \"611118327c88be49f450216c\",\r\n    \"subject\": \"subject\", \r\n    \"scrn\": \"scrn\", \r\n    \"visit1\": \"Visit1\", \r\n    \"cm\": \"CM\", \r\n    \"ae\": \"AE\", \r\n    \"version\": \"V1\"\r\n}"
+					},
+					"response": []
+				},
+				{
+					"name": "Deleting Visit on _ID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/visits/6111188f7c88be49f450216d",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"visits",
+								"6111188f7c88be49f450216d"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Latest Version Visits on Study_ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/visits/latestversion/study/61166a00c9f9d80016b1f3f4",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"visits",
+								"latestversion",
+								"study",
+								"61166a00c9f9d80016b1f3f4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Form",
+			"item": [
+				{
+					"name": "Get All Form(Both Active and Inactive)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/form/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"form",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Active Form(i.e isActive = true)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/form/getActiveForm",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"form",
+								"getActiveForm"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Form on _ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/form/6108df12c250e7015cf5f086",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"form",
+								"6108df12c250e7015cf5f086"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Form on Study_ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/form/studyid/6108df12c250e7015cf5f086",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"form",
+								"studyid",
+								"6108df12c250e7015cf5f086"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Form on FolderOID and StudyID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/form/folderoid/CONSENT/studyid/612333908e3f66001651aaa9",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"form",
+								"folderoid",
+								"CONSENT",
+								"studyid",
+								"612333908e3f66001651aaa9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Adding a new Form",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"study_id\": \"6108df12c250e7015cf5f086\", \r\n    \"oid\": \"JOI.string()\", \r\n    \"ordinal\": \"JOI.string()\", \r\n    \"draftFormName\": \"JOI.string()\", \r\n    \"draftFormActive\": \"JOI.string()\", \r\n    \"isTemplate\": \"JOI.string()\", \r\n    \"isSignatureRequired\": \"JOI.string()\", \r\n    \"viewRestrictions\": \"JOI.string()\",\r\n    \"entryRestrictions\": \"JOI.string()\",\r\n    \"logDirection\": \"JOI.string()\",\r\n    \"version\": \"V1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/form/create",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"form",
+								"create"
+							]
+						},
+						"description": "{\r\n    \"study_id\": \"6108df12c250e7015cf5f086\", \r\n    \"oid\": \"JOI.string()\", \r\n    \"ordinal\": \"JOI.string()\", \r\n    \"draftFormName\": \"JOI.string()\", \r\n    \"draftFormActive\": \"JOI.string()\", \r\n    \"isTemplate\": \"JOI.string()\", \r\n    \"isSignatureRequired\": \"JOI.string()\", \r\n    \"viewRestrictions\": \"JOI.string()\",\r\n    \"entryRestrictions\": \"JOI.string()\",\r\n    \"logDirection\": \"JOI.string()\",\r\n    \"version\": \"V1\"\r\n}"
+					},
+					"response": []
+				},
+				{
+					"name": "Bulk Creation of Form",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[{\r\n    \"study_id\": \"6108df12c250e7015cf5f086\", \r\n    \"oid\": \"JOI.string()\", \r\n    \"ordinal\": \"JOI.string()\", \r\n    \"draftFormName\": \"JOI.string()\", \r\n    \"draftFormActive\": \"JOI.string()\", \r\n    \"isTemplate\": \"JOI.string()\", \r\n    \"isSignatureRequired\": \"JOI.string()\", \r\n    \"viewRestrictions\": \"JOI.string()\",\r\n    \"entryRestrictions\": \"JOI.string()\",\r\n    \"logDirection\": \"JOI.string()\",\r\n    \"version\": \"V1\"\r\n},\r\n{\r\n    \"study_id\": \"6108df12c250e7015cf5f086\", \r\n    \"oid\": \"JOI.string()\", \r\n    \"ordinal\": \"JOI.string()\", \r\n    \"draftFormName\": \"JOI.string()\", \r\n    \"draftFormActive\": \"JOI.string()\", \r\n    \"isTemplate\": \"JOI.string()\", \r\n    \"isSignatureRequired\": \"JOI.string()\", \r\n    \"viewRestrictions\": \"JOI.string()\",\r\n    \"entryRestrictions\": \"JOI.string()\",\r\n    \"logDirection\": \"JOI.string()\",\r\n    \"version\": \"V1\"\r\n}]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/form/bulkCreate",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"form",
+								"bulkCreate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Updating Form on _ID",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"study_id\": \"6108df12c250e7015cf5f086\", \r\n    \"oid\": \"JOI.string()\", \r\n    \"ordinal\": \"JOI.string()\", \r\n    \"draftFormName\": \"JOI.string()\", \r\n    \"draftFormActive\": \"JOI.string()\", \r\n    \"isTemplate\": \"JOI.string()\", \r\n    \"isSignatureRequired\": \"JOI.string()\", \r\n    \"viewRestrictions\": \"JOI.string()\",\r\n    \"entryRestrictions\": \"JOI.string()\",\r\n    \"logDirection\": \"JOI.string()\",\r\n    \"version\": \"V1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/form/61112d8d32c6790d2cffd398",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"form",
+								"61112d8d32c6790d2cffd398"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deleting Form on _ID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/form/61112d8d32c6790d2cffd398",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"form",
+								"61112d8d32c6790d2cffd398"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Latest Version Form on Study_ID and Folder_OID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/form/latestversion/folder/ENROL/study/6138c97f8a5b4938ac058ad2",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"form",
+								"latestversion",
+								"folder",
+								"ENROL",
+								"study",
+								"6138c97f8a5b4938ac058ad2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Field",
+			"item": [
+				{
+					"name": "Get All Field(Both Active and Inactive)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/field/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"field",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Active Field(i.e isActive = true)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/field/getActiveField",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"field",
+								"getActiveField"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Field on _ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/field/6108df12c250e7015cf5f086",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"field",
+								"6108df12c250e7015cf5f086"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Field on Study_ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/field/studyid/6108df12c250e7015cf5f086",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"field",
+								"studyid",
+								"6108df12c250e7015cf5f086"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Field on FormOID and Study_ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/field/formoid/ENROL/studyid/612333908e3f66001651aaa9",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"field",
+								"formoid",
+								"ENROL",
+								"studyid",
+								"612333908e3f66001651aaa9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Adding a new Field",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n            \"study_id\": \"6108df12c250e7015cf5f086\", \r\n            \"formOID\": \"String\", \r\n            \"fieldOID\": \"String\", \r\n            \"ordinal\": \"String\", \r\n            \"draftFieldName\": \"String\", \r\n            \"draftFieldActive\": \"String\", \r\n            \"variableOID\": \"String\", \r\n            \"dataFormat\": \"String\", \r\n            \"dataDictionaryName\": \"String\", \r\n            \"unitDictionaryName\": \"String\", \r\n            \"codingDictionary\": \"String\", \r\n            \"controlType\": \"String\", \r\n            \"preText\": \"String\", \r\n            \"fixedUnit\": \"String\", \r\n            \"sourceDocument\": \"String\", \r\n            \"isLog\": \"String\", \r\n            \"defaultValue\": \"String\", \r\n            \"sasLable\": \"String\", \r\n            \"isRequired\": \"String\", \r\n            \"queryFutureDate\": \"String\", \r\n            \"isVisible\": \"String\", \r\n            \"analyteName\": \"String\", \r\n            \"isClinicalSignificance\": \"String\",\r\n            \"queryNonConformance\": \"String\", \r\n            \"doesNotBreakSignature\": \"String\", \r\n            \"viewRstrictions\": \"String\", \r\n            \"entryRestrictions\": \"String\", \r\n            \"reviewGroups\": \"String\",\r\n            \"version\": \"V1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/field/create",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"field",
+								"create"
+							]
+						},
+						"description": "{\r\n            \"study_id\": \"6108df12c250e7015cf5f086\", \r\n            \"formOID\": \"String\", \r\n            \"fieldOID\": \"String\", \r\n            \"ordinal\": \"String\", \r\n            \"draftFieldName\": \"String\", \r\n            \"draftFieldActive\": \"String\", \r\n            \"variableOID\": \"String\", \r\n            \"dataFormat\": \"String\", \r\n            \"dataDictionaryName\": \"String\", \r\n            \"unitDictionaryName\": \"String\", \r\n            \"codingDictionary\": \"String\", \r\n            \"controlType\": \"String\", \r\n            \"preText\": \"String\", \r\n            \"fixedUnit\": \"String\", \r\n            \"sourceDocument\": \"String\", \r\n            \"isLog\": \"String\", \r\n            \"defaultValue\": \"String\", \r\n            \"sasLable\": \"String\", \r\n            \"isRequired\": \"String\", \r\n            \"queryFutureDate\": \"String\", \r\n            \"isVisible\": \"String\", \r\n            \"analyteName\": \"String\", \r\n            \"isClinicalSignificance\": \"String\",\r\n            \"queryNonConformance\": \"String\", \r\n            \"doesNotBreakSignature\": \"String\", \r\n            \"viewRstrictions\": \"String\", \r\n            \"entryRestrictions\": \"String\", \r\n            \"reviewGroups\": \"String\",\r\n            \"version\": \"V1\"\r\n}"
+					},
+					"response": []
+				},
+				{
+					"name": "Bulk Creation of Field",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[{\r\n            \"study_id\": \"6108df12c250e7015cf5f086\", \r\n            \"formOID\": \"String\", \r\n            \"fieldOID\": \"String\", \r\n            \"ordinal\": \"String\", \r\n            \"draftFieldName\": \"String\", \r\n            \"draftFieldActive\": \"String\", \r\n            \"variableOID\": \"String\", \r\n            \"dataFormat\": \"String\", \r\n            \"dataDictionaryName\": \"String\", \r\n            \"unitDictionaryName\": \"String\", \r\n            \"codingDictionary\": \"String\", \r\n            \"controlType\": \"String\", \r\n            \"preText\": \"String\", \r\n            \"fixedUnit\": \"String\", \r\n            \"sourceDocument\": \"String\", \r\n            \"isLog\": \"String\", \r\n            \"defaultValue\": \"String\", \r\n            \"sasLable\": \"String\", \r\n            \"isRequired\": \"String\", \r\n            \"queryFutureDate\": \"String\", \r\n            \"isVisible\": \"String\", \r\n            \"analyteName\": \"String\", \r\n            \"isClinicalSignificance\": \"String\",\r\n            \"queryNonConformance\": \"String\", \r\n            \"doesNotBreakSignature\": \"String\", \r\n            \"viewRstrictions\": \"String\", \r\n            \"entryRestrictions\": \"String\", \r\n            \"reviewGroups\": \"String\",\r\n            \"version\": \"V1\"\r\n},\r\n{\r\n            \"study_id\": \"6108df12c250e7015cf5f086\", \r\n            \"formOID\": \"String\", \r\n            \"fieldOID\": \"String\", \r\n            \"ordinal\": \"String\", \r\n            \"draftFieldName\": \"String\", \r\n            \"draftFieldActive\": \"String\", \r\n            \"variableOID\": \"String\", \r\n            \"dataFormat\": \"String\", \r\n            \"dataDictionaryName\": \"String\", \r\n            \"unitDictionaryName\": \"String\", \r\n            \"codingDictionary\": \"String\", \r\n            \"controlType\": \"String\", \r\n            \"preText\": \"String\", \r\n            \"fixedUnit\": \"String\", \r\n            \"sourceDocument\": \"String\", \r\n            \"isLog\": \"String\", \r\n            \"defaultValue\": \"String\", \r\n            \"sasLable\": \"String\", \r\n            \"isRequired\": \"String\", \r\n            \"queryFutureDate\": \"String\", \r\n            \"isVisible\": \"String\", \r\n            \"analyteName\": \"String\", \r\n            \"isClinicalSignificance\": \"String\",\r\n            \"queryNonConformance\": \"String\", \r\n            \"doesNotBreakSignature\": \"String\", \r\n            \"viewRstrictions\": \"String\", \r\n            \"entryRestrictions\": \"String\", \r\n            \"reviewGroups\": \"String\",\r\n            \"version\": \"V1\"\r\n}]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/field/bulkCreate",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"field",
+								"bulkCreate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Updating Field on _ID",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n            \"study_id\": \"6108df12c250e7015cf5f086\", \r\n            \"formOID\": \"String\", \r\n            \"fieldOID\": \"String\", \r\n            \"ordinal\": \"String\", \r\n            \"draftFieldName\": \"String\", \r\n            \"draftFieldActive\": \"String\", \r\n            \"variableOID\": \"String\", \r\n            \"dataFormat\": \"String\", \r\n            \"dataDictionaryName\": \"String\", \r\n            \"unitDictionaryName\": \"String\", \r\n            \"codingDictionary\": \"String\", \r\n            \"controlType\": \"String\", \r\n            \"preText\": \"String\", \r\n            \"fixedUnit\": \"String\", \r\n            \"sourceDocument\": \"String\", \r\n            \"isLog\": \"String\", \r\n            \"defaultValue\": \"String\", \r\n            \"sasLable\": \"String\", \r\n            \"isRequired\": \"String\", \r\n            \"queryFutureDate\": \"String\", \r\n            \"isVisible\": \"String\", \r\n            \"analyteName\": \"String\", \r\n            \"isClinicalSignificance\": \"String\",\r\n            \"queryNonConformance\": \"String\", \r\n            \"doesNotBreakSignature\": \"String\", \r\n            \"viewRstrictions\": \"String\", \r\n            \"entryRestrictions\": \"String\", \r\n            \"reviewGroups\": \"String\",\r\n            \"version\": \"V1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/field/61113c9eaf311e31a891366f",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"field",
+								"61113c9eaf311e31a891366f"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deleting Field on _ID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/field/61113c9eaf311e31a891366f",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"field",
+								"61113c9eaf311e31a891366f"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Latest Version Field on FormOID and Study_ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/field/latestversion/form/ENROL/study/6138c97f8a5b4938ac058ad2",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"field",
+								"latestversion",
+								"form",
+								"ENROL",
+								"study",
+								"6138c97f8a5b4938ac058ad2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "SDTM Mapping",
+			"item": [
+				{
+					"name": "Get All SDTM-Mapping(Both Active and Inactive)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/sdtmmaping/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"sdtmmaping",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Active SDTM-Mapping(i.e isActive = true)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/sdtmmaping/getActiveSdtmMapping",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"sdtmmaping",
+								"getActiveSdtmMapping"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All SDTM-Mapping on _ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/sdtmmaping/6108df12c250e7015cf5f086",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"sdtmmaping",
+								"6108df12c250e7015cf5f086"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All SDTM-Mapping on Study_ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/sdtmmaping/studyid/6108df12c250e7015cf5f086",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"sdtmmaping",
+								"studyid",
+								"6108df12c250e7015cf5f086"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All SDTM-Mapping on EntityType",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/sdtmmaping/entitytype/entityType1",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"sdtmmaping",
+								"entitytype",
+								"entityType1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Adding a new SDTM-Mapping",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"study_id\": \"610e9a28f8ed080015d6698c\",\r\n    \"study_version\": \"study_version\", \r\n    \"entityType\": \"entityType\", \r\n    \"columnNames\": \"columnNames\", \r\n    \"mapped_data\": \"mapped_data\", \r\n    \"creating_user_id\": \"creating_user_id\", \r\n    \"status\": \"status\", \r\n    \"comment\": \"comment\", \r\n    \"commenting_user_id\": \"commenting_user_id\",\r\n    \"version\": \"version\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/sdtmmaping/create",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"sdtmmaping",
+								"create"
+							]
+						},
+						"description": "{\r\n    \"study_id\": \"610e9a28f8ed080015d6698c\",\r\n    \"study_version\": \"study_version\", \r\n    \"entityType\": \"entityType\", \r\n    \"columnNames\": \"columnNames\", \r\n    \"mapped_data\": \"mapped_data\", \r\n    \"creating_user_id\": \"creating_user_id\", \r\n    \"status\": \"status\", \r\n    \"comment\": \"comment\", \r\n    \"commenting_user_id\": \"commenting_user_id\",\r\n    \"version\": \"version\"\r\n}"
+					},
+					"response": []
+				},
+				{
+					"name": "Bulk Creation of SDTM Mapping",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[{\r\n    \"study_id\": \"6108df12c250e7015cf5f086\",\r\n    \"study_version\": \"STD-101-SUB-102\", \r\n    \"entityType\": \"ENROL\", \r\n    \"columnNames\": \"[{'colname':'STUDYID'},{'colname':'SITEID'},{'colname':'SUBJID'},{'colname':'VISITID'},{'colname':'VISSEQ'},{'colname':'eCRF_VERSION'},{'colname':'VERSION'},{'colname':'SUBJECT'},{'colname':'PART'}]\", \r\n    \"mapped_data\": \"[{\\\"STUDYID\\\":\\\"6108df12c250e7015cf5f086\\\",\\\"SITEID\\\":\\\"Site-101\\\",\\\"SUBJID\\\":\\\"STD-101-SUB-101\\\",\\\"VISITID\\\":\\\"V-101\\\",\\\"VISSEQ\\\":1,\\\"eCRF_VERSION\\\":\\\"CRF-101\\\",\\\"VERSION\\\":\\\"EN-1.0.0\\\",\\\"SUBJECT\\\":\\\"STD-101-SUB-101\\\",\\\"PART\\\":false},{\\\"STUDYID\\\":\\\"6108df12c250e7015cf5f086\\\",\\\"SITEID\\\":\\\"Site-101\\\",\\\"SUBJID\\\":\\\"STD-101-SUB-102\\\",\\\"VISITID\\\":\\\"V-101\\\",\\\"VISSEQ\\\":1,\\\"eCRF_VERSION\\\":\\\"CRF-101\\\",\\\"VERSION\\\":\\\"EN-1.0.0\\\",\\\"SUBJECT\\\":\\\"STD-101-SUB-102\\\",\\\"PART\\\":false},{\\\"STUDYID\\\":\\\"6108df12c250e7015cf5f086\\\",\\\"SITEID\\\":\\\"Site-101\\\",\\\"SUBJID\\\":\\\"STD-101-SUB-103\\\",\\\"VISITID\\\":\\\"V-101\\\",\\\"VISSEQ\\\":1,\\\"eCRF_VERSION\\\":\\\"CRF-101\\\",\\\"VERSION\\\":\\\"EN-1.0.0\\\",\\\"SUBJECT\\\":\\\"STD-101-SUB-103\\\",\\\"PART\\\":false},{\\\"STUDYID\\\":\\\"6108df12c250e7015cf5f086\\\",\\\"SITEID\\\":\\\"Site-101\\\",\\\"SUBJID\\\":\\\"STD-101-SUB-104\\\",\\\"VISITID\\\":\\\"V-101\\\",\\\"VISSEQ\\\":1,\\\"eCRF_VERSION\\\":\\\"CRF-101\\\",\\\"VERSION\\\":\\\"EN-1.0.0\\\",\\\"SUBJECT\\\":\\\"STD-101-SUB-104\\\",\\\"PART\\\":false},{\\\"STUDYID\\\":\\\"6108df12c250e7015cf5f086\\\",\\\"SITEID\\\":\\\"Site-101\\\",\\\"SUBJID\\\":\\\"STD-101-SUB-105\\\",\\\"VISITID\\\":\\\"V-101\\\",\\\"VISSEQ\\\":1,\\\"eCRF_VERSION\\\":\\\"CRF-101\\\",\\\"VERSION\\\":\\\"EN-1.0.0\\\",\\\"SUBJECT\\\":\\\"STD-101-SUB-105\\\",\\\"PART\\\":false}]\",\r\n    \"status\": \"PASS\", \r\n    \"version\": \"version\"\r\n}]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://maiora-life-sciences.herokuapp.com/api/sdtmmaping/bulkCreate",
+							"protocol": "https",
+							"host": [
+								"maiora-life-sciences",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"sdtmmaping",
+								"bulkCreate"
+							]
+						},
+						"description": "[{\r\n    \"study_id\": \"610e9a28f8ed080015d6698c\",\r\n    \"study_version\": \"study_version\", \r\n    \"entityType\": \"entityType\", \r\n    \"columnNames\": \"columnNames\", \r\n    \"mapped_data\": \"mapped_data\", \r\n    \"creating_user_id\": \"creating_user_id\", \r\n    \"status\": \"status\", \r\n    \"comment\": \"comment\", \r\n    \"commenting_user_id\": \"commenting_user_id\",\r\n    \"version\": \"version\"\r\n},\r\n{\r\n    \"study_id\": \"610e9a28f8ed080015d6698c\",\r\n    \"study_version\": \"study_version\", \r\n    \"entityType\": \"entityType\", \r\n    \"columnNames\": \"columnNames\", \r\n    \"mapped_data\": \"mapped_data\", \r\n    \"creating_user_id\": \"creating_user_id\", \r\n    \"status\": \"status\", \r\n    \"comment\": \"comment\", \r\n    \"commenting_user_id\": \"commenting_user_id\",\r\n    \"version\": \"version\"\r\n}]"
+					},
+					"response": []
+				},
+				{
+					"name": "Updating SDTM-Mapping on _ID",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"study_id\": \"610e9a28f8ed080015d6698c\",\r\n    \"study_version\": \"study_version1\", \r\n    \"entityType\": \"entityType1\", \r\n    \"columnNames\": \"columnNames1\", \r\n    \"mapped_data\": \"mapped_data1\", \r\n    \"creating_user_id\": \"creating_user_id1\", \r\n    \"status\": \"status1\", \r\n    \"comment\": \"comment1\", \r\n    \"commenting_user_id\": \"commenting_user_id1\",\r\n    \"version\": \"version1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/sdtmmaping/6114c6f6408ba60d30fba4dd",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"sdtmmaping",
+								"6114c6f6408ba60d30fba4dd"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deleting SDTM-Mapping on _ID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/sdtmmaping/6114c6f6408ba60d30fba4dd",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"sdtmmaping",
+								"6114c6f6408ba60d30fba4dd"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Test Cases V2",
+			"item": [
+				{
+					"name": "GET All Test Cases (Both Active and InActive)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/ver2test/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"ver2test",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET All Test Cases on StudyID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://maiora-life-sciences.herokuapp.com/api/ver2test/studyid/Study-101",
+							"protocol": "https",
+							"host": [
+								"maiora-life-sciences",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"ver2test",
+								"studyid",
+								"Study-101"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET All Test Cases on Form OID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://maiora-life-sciences.herokuapp.com/api/ver2test/formoid/ENROL",
+							"protocol": "https",
+							"host": [
+								"maiora-life-sciences",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"ver2test",
+								"formoid",
+								"ENROL"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET All Test Cases on Field OID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://maiora-life-sciences.herokuapp.com/api/ver2test/fieldoid/SUBJECT",
+							"protocol": "https",
+							"host": [
+								"maiora-life-sciences",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"ver2test",
+								"fieldoid",
+								"SUBJECT"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Bulk Creation on Generated TestCases",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[{\r\n\"STUDYID\": \"Draft 1.0\",\r\n\"SITEID\": \"SITE-101\",\r\n\"SUBJECT_ID\": \"1\",\r\n\"eCRFV_VERSION\": \"Draft-CRF-a1.0\",\r\n\"Created_By\": \"SYSTEM\",\r\n\"FormOID\": \"AE\",\r\n\"FieldOID\": \"AEACN\",\r\n\"VariableOID\": \"AEACN\",\r\n\"Test_Condition\": \"Check if field is active\"\r\n},\r\n{\r\n\"STUDYID\": \"Draft 1.0\",\r\n\"SITEID\": \"SITE-101\",\r\n\"SUBJECT_ID\": \"1\",\r\n\"eCRFV_VERSION\": \"Draft-CRF-a1.0\",\r\n\"Created_By\": \"SYSTEM\",\r\n\"FormOID\": \"AE\",\r\n\"FieldOID\": \"AEACN\",\r\n\"VariableOID\": \"AEACN\",\r\n\"Test_Condition\": \"Check if field is active\"\r\n}]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/ver2test/bulkCreate",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"ver2test",
+								"bulkCreate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET on VariableOID and StudyID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/ver2test/studyid/Draft 1.0/variableoid/AEACN",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"ver2test",
+								"studyid",
+								"Draft 1.0",
+								"variableoid",
+								"AEACN"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET All Test Cases on StudyID and FormID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://maiora-life-sciences.herokuapp.com/api/ver2test/studyid/Study-101/formid/ENROL",
+							"protocol": "https",
+							"host": [
+								"maiora-life-sciences",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"ver2test",
+								"studyid",
+								"Study-101",
+								"formid",
+								"ENROL"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET All Test Cases on StudyID and FieldOID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://maiora-life-sciences.herokuapp.com/api/ver2test/studyid/Study-101/fieldid/PART",
+							"protocol": "https",
+							"host": [
+								"maiora-life-sciences",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"ver2test",
+								"studyid",
+								"Study-101",
+								"fieldid",
+								"PART"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Bulk Create Test Cases V2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[{\r\n    \"study_UUID\": \"Study-101\",\r\n                \"site_uuid\": \"Site-101\",\r\n                \"subject_id\": \"STD-101-SUB-101\",\r\n                \"ecrf_verion\": \"V-101\",\r\n                \"form_OID\": \"ENROL\",\r\n                \"field_OID\": \"SUBJECT\", \r\n                \"dataDictionaryOID\": \"$ROUTE2F_1\",\r\n                \"test_condition\": \"Not mandatory input\",  \r\n                \"created_by\": \"SYSTEM\",\r\n                \"test_status\": \"PASS\"\r\n},\r\n{\r\n    \"study_UUID\": \"Study-101\",\r\n                \"site_uuid\": \"Site-101\",\r\n                \"subject_id\": \"STD-101-SUB-102\",\r\n                \"ecrf_verion\": \"V-101\",\r\n                \"form_OID\": \"ENROL\",\r\n                \"field_OID\": \"SUBJECT\", \r\n                \"dataDictionaryOID\": \"$NYNA\",\r\n                \"test_condition\": \"DataFormat $8\",  \r\n                \"created_by\": \"SYSTEM\",\r\n                \"test_data\": \"Sub-121\",\r\n                \"test_status\": \"PASS\"\r\n},\r\n{\r\n    \"study_UUID\": \"Study-101\",\r\n                \"site_uuid\": \"Site-101\",\r\n                \"subject_id\": \"STD-101-SUB-103\",\r\n                \"ecrf_verion\": \"V-101\",\r\n                \"form_OID\": \"ENROL\",\r\n                \"field_OID\": \"SUBJECT\", \r\n                \"dataDictionaryOID\": \"$ROUTE2F_1\",\r\n                \"test_condition\": \"DataFormat $8\",  \r\n                \"created_by\": \"SYSTEM\",\r\n                \"test_status\": \"PASS\"\r\n},\r\n{\r\n    \"study_UUID\": \"Study-101\",\r\n                \"site_uuid\": \"Site-101\",\r\n                \"subject_id\": \"STD-101-SUB-104\",\r\n                \"ecrf_verion\": \"V-101\",\r\n                \"form_OID\": \"ENROL\",\r\n                \"field_OID\": \"SUBJECT\", \r\n                \"dataDictionaryOID\": \"$ROUTE2F_1\",\r\n                \"test_condition\": \"DataFormat $8\",  \r\n                \"created_by\": \"SYSTEM\",\r\n                \"test_data\": \"Data-12345\",\r\n                \"test_status\": \"PASS\"\r\n},\r\n{\r\n    \"study_UUID\": \"Study-101\",\r\n                \"site_uuid\": \"Site-101\",\r\n                \"subject_id\": \"STD-101-SUB-101\",\r\n                \"ecrf_verion\": \"V-101\",\r\n                \"form_OID\": \"ENROL\",\r\n                \"field_OID\": \"PART\", \r\n                \"dataDictionaryOID\": \"$ROUTE2F_1\",\r\n                \"test_condition\": \"Not mandatory input\",  \r\n                \"created_by\": \"SYSTEM\",\r\n                \"test_status\": \"PASS\"\r\n},\r\n{\r\n    \"study_UUID\": \"Study-101\",\r\n                \"site_uuid\": \"Site-101\",\r\n                \"subject_id\": \"STD-101-SUB-102\",\r\n                \"ecrf_verion\": \"V-101\",\r\n                \"form_OID\": \"ENROL\",\r\n                \"field_OID\": \"PART\", \r\n                \"dataDictionaryOID\": \"$NYNA\",\r\n                \"test_condition\": \"DataFormat $1\",  \r\n                \"test_data\": \"Y\",\r\n                \"created_by\": \"SYSTEM\",\r\n                \"test_status\": \"PASS\"\r\n},\r\n{\r\n    \"study_UUID\": \"Study-101\",\r\n                \"site_uuid\": \"Site-101\",\r\n                \"subject_id\": \"STD-101-SUB-102\",\r\n                \"ecrf_verion\": \"V-101\",\r\n                \"form_OID\": \"ENROL\",\r\n                \"field_OID\": \"PART\", \r\n                \"dataDictionaryOID\": \"$NYNA\",\r\n                \"test_condition\": \"DataFormat $1\",  \r\n                \"test_data\": \"Y\",\r\n                \"created_by\": \"SYSTEM\",\r\n                \"test_status\": \"PASS\"\r\n},\r\n{\r\n    \"study_UUID\": \"Study-101\",\r\n                \"site_uuid\": \"Site-101\",\r\n                \"subject_id\": \"STD-101-SUB-103\",\r\n                \"ecrf_verion\": \"V-101\",\r\n                \"form_OID\": \"ENROL\",\r\n                \"field_OID\": \"PART\", \r\n                \"dataDictionaryOID\": \"$NYNA\",\r\n                \"test_condition\": \"DataFormat $1\",  \r\n                \"test_data\": \"1\",\r\n                \"created_by\": \"SYSTEM\",\r\n                \"test_status\": \"PASS\"\r\n},\r\n{\r\n    \"study_UUID\": \"Study-101\",\r\n                \"site_uuid\": \"Site-101\",\r\n                \"subject_id\": \"STD-101-SUB-104\",\r\n                \"ecrf_verion\": \"V-101\",\r\n                \"form_OID\": \"ENROL\",\r\n                \"field_OID\": \"PART\", \r\n                \"dataDictionaryOID\": \"$NYNA\",\r\n                \"test_condition\": \"DataFormat $1\",  \r\n                \"test_data\": \"0\",\r\n                \"created_by\": \"SYSTEM\",\r\n                \"test_status\": \"PASS\"\r\n}]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/ver2test/bulkCreate",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"ver2test",
+								"bulkCreate"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Changes ALS Data",
+			"item": [
+				{
+					"name": "GET All Data (Both Active and InActive)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/changedalsdata/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"changedalsdata",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET All Data (Only Active)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/changedalsdata/getActiveChangedAlsData",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"changedalsdata",
+								"getActiveChangedAlsData"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET on _id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/changedalsdata/614dc6a2761c4e434062c791",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"changedalsdata",
+								"614dc6a2761c4e434062c791"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET on Study_ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/changedalsdata/studyid/611666a180782f00169aa4e4",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"changedalsdata",
+								"studyid",
+								"611666a180782f00169aa4e4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Others (Ignore)",
+			"item": [
+				{
+					"name": "Test Cases",
+					"item": [
+						{
+							"name": "Get All Test Cases List (both isActive=true and isActive=false)",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://maiora-life-sciences.herokuapp.com/api/testcases/",
+									"protocol": "https",
+									"host": [
+										"maiora-life-sciences",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"api",
+										"testcases",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Getting All Active Test Cases (i.e: isActive = true)",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://maiora-life-sciences.herokuapp.com/api/testcases/getActiveTestCases",
+									"protocol": "https",
+									"host": [
+										"maiora-life-sciences",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"api",
+										"testcases",
+										"getActiveTestCases"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get All Test Cases on _ID",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://maiora-life-sciences.herokuapp.com/api/testcases/610a937f16a5bf35bcbccf37",
+									"protocol": "https",
+									"host": [
+										"maiora-life-sciences",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"api",
+										"testcases",
+										"610a937f16a5bf35bcbccf37"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Adding New Test Case Data",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"study_UUID\": \"study_uuid_1\",\r\n    \"site_uuid\": \"site_uuid_1\",\r\n    \"formSeq\": \"formSeq_1\",\r\n    \"epoch\": \"epoch_1\",\r\n    \"version\": \"version_1\", \r\n    \"entityType\": \"entity_type_1\", \r\n    \"entity_OID\": \"entity_OID_1\",\r\n    \"test_data\": \"test_data_1\",\r\n    \"creating_user_uuid\": \"creating_user_uuid_1\", \r\n    \"description\": \"description_1\", \r\n    \"expected_output\": \"expected_output_1\", \r\n    \"generated_output\": \"generated_output_1\", \r\n    \"test_status\": \"test_status_1\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://maiora-life-sciences.herokuapp.com/api/testcases/create",
+									"protocol": "https",
+									"host": [
+										"maiora-life-sciences",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"api",
+										"testcases",
+										"create"
+									]
+								},
+								"description": "{\r\n    \"study_UUID\": \"study_uuid_1\",\r\n    \"site_uuid\": \"site_uuid_1\",\r\n    \"formSeq\": \"formSeq_1\",\r\n    \"epoch\": \"epoch_1\",\r\n    \"version\": \"version_1\", \r\n    \"entityType\": \"entity_type_1\", \r\n    \"entity_OID\": \"entity_OID_1\",\r\n    \"test_data\": \"test_data_1\",\r\n    \"creating_user_uuid\": \"creating_user_uuid_1\", \r\n    \"description\": \"description_1\", \r\n    \"expected_output\": \"expected_output_1\", \r\n    \"generated_output\": \"generated_output_1\", \r\n    \"test_status\": \"test_status_1\"\r\n}"
+							},
+							"response": []
+						},
+						{
+							"name": "Bulk Creation of Test Case Data",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "[{\r\n    \"study_UUID\": \"study_uuid_2\",\r\n    \"site_uuid\": \"site_uuid_2\",\r\n    \"formSeq\": \"formSeq_2\",\r\n    \"epoch\": \"epoch_2\",\r\n    \"version\": \"version_2\", \r\n    \"entityType\": \"entity_type_2\", \r\n    \"entity_OID\": \"entity_OID_2\",\r\n    \"test_data\": \"test_data_2\",\r\n    \"creating_user_uuid\": \"creating_user_uuid_2\", \r\n    \"description\": \"description_2\", \r\n    \"expected_output\": \"expected_output_2\", \r\n    \"generated_output\": \"generated_output_2\", \r\n    \"test_status\": \"test_status_2\"\r\n},\r\n{\r\n    \"study_UUID\": \"study_uuid_3\",\r\n    \"site_uuid\": \"site_uuid_3\",\r\n    \"formSeq\": \"formSeq_3\",\r\n    \"epoch\": \"epoch_3\",\r\n    \"version\": \"version_3\", \r\n    \"entityType\": \"entity_type_3\", \r\n    \"entity_OID\": \"entity_OID_3\",\r\n    \"test_data\": \"test_data_3\",\r\n    \"creating_user_uuid\": \"creating_user_uuid_3\", \r\n    \"description\": \"description_3\", \r\n    \"expected_output\": \"expected_output_3\", \r\n    \"generated_output\": \"generated_output_3\", \r\n    \"test_status\": \"test_status_3\"\r\n}]",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://maiora-life-sciences.herokuapp.com/api/testcases/bulkCreate",
+									"protocol": "https",
+									"host": [
+										"maiora-life-sciences",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"api",
+										"testcases",
+										"bulkCreate"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Updating the Test Case Data",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"study_UUID\": \"study_uuid_1\",\r\n    \"site_uuid\": \"site_uuid_1\",\r\n    \"formSeq\": \"formSeq_1\",\r\n    \"epoch\": \"epoch_1\",\r\n    \"version\": \"version_1\", \r\n    \"entityType\": \"entity_type_1\", \r\n    \"entity_OID\": \"entity_OID_1\",\r\n    \"test_data\": \"test_data_1\",\r\n    \"creating_user_uuid\": \"creating_user_uuid_1\", \r\n    \"description\": \"description_1\", \r\n    \"expected_output\": \"expected_output_1\", \r\n    \"generated_output\": \"generated_output_1\", \r\n    \"test_status\": \"test_status_1\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://maiora-life-sciences.herokuapp.com/api/testcases/610a937f16a5bf35bcbccf38",
+									"protocol": "https",
+									"host": [
+										"maiora-life-sciences",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"api",
+										"testcases",
+										"610a937f16a5bf35bcbccf38"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Deleting the Test Case Data",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://maiora-life-sciences.herokuapp.com/api/testcases/610a937f16a5bf35bcbccf38",
+									"protocol": "https",
+									"host": [
+										"maiora-life-sciences",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"api",
+										"testcases",
+										"610a937f16a5bf35bcbccf38"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "File Download on providing the Uploaded FileName",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/C:/Users/Admin/Downloads/testing1.xlsx"
+								},
+								{
+									"key": "type",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/files/1628177972608-maiora-Microsoft.png",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"files",
+								"1628177972608-maiora-Microsoft.png"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Multiple File Upload",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "multi-files",
+									"type": "file",
+									"src": [
+										"/C:/Users/Admin/Downloads/1628177695218-maiora-testing1 (1).xlsx",
+										"/C:/Users/Admin/Downloads/testing1 (1).xlsx"
+									]
+								},
+								{
+									"key": "type",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/multiple-upload",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"multiple-upload"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "STAGING THE DATA - CREATING STUDY HIERARCHY",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"docPath\": \"https://maiora-life-sciences.s3.amazonaws.com/study/alsDoc/ALS.xlsx\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/alsStaging/staging/6112037f0946223afca14b47",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"alsStaging",
+						"staging",
+						"6112037f0946223afca14b47"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RUN MAP",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n            \"rawData\": \"RAW\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/study/runmap/611666a180782f00169aa4e4",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"study",
+						"runmap",
+						"611666a180782f00169aa4e4"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,128 @@
+Users: 
+
+[
+	{
+	"signup_date": "2019-09-04T11:37:54.151Z",
+            "isActive": true,
+            "inActive_from": null,
+            "channels": null,
+            "_id": "5d6fa2123e7cc229d0a67430",
+            "name": "Harsha",
+            "__v": 0
+        },
+        {
+            "signup_date": "2019-09-04T11:38:23.967Z",
+            "isActive": true,
+            "inActive_from": null,
+            "channels": null,
+            "_id": "5d6fa22f3e7cc229d0a67431",
+            "name": "Swathi",
+            "__v": 0
+        },
+        {
+            "signup_date": "2019-09-04T11:38:52.265Z",
+            "isActive": true,
+            "inActive_from": null,
+            "channels": null,
+            "_id": "5d6fa24c3e7cc229d0a67432",
+            "name": "Kiran",
+            "__v": 0
+        },
+        {
+            "signup_date": "2019-09-04T11:38:58.043Z",
+            "isActive": true,
+            "inActive_from": null,
+            "channels": null,
+            "_id": "5d6fa2523e7cc229d0a67433",
+            "name": "Kishore",
+            "__v": 0
+        },
+        {
+            "signup_date": "2019-09-04T11:39:06.803Z",
+            "isActive": true,
+            "inActive_from": null,
+            "channels": null,
+            "_id": "5d6fa25a3e7cc229d0a67434",
+            "name": "Santosh",
+            "__v": 0
+        },
+        {
+            "signup_date": "2019-09-04T11:39:11.814Z",
+            "isActive": true,
+            "inActive_from": null,
+            "channels": null,
+            "_id": "5d6fa25f3e7cc229d0a67435",
+            "name": "Sandeep",
+            "__v": 0
+        }
+    ]
+
+
+
+------------------------------------------------------
+
+
+
+Channels: 
+[
+ {
+            "domain": "https://www.aol.com/",
+            "logo": "https://s.blogsmithmedia.com/www.aol.com/assets-h7c67bd2d5994c7ee4182421f5f2a65ab/images/nav/aol-logo-black.svg?h=c8ffe034a0bf85df974064577b2cde76",
+            "isActive": true,
+            "added_date": "2019-08-29T12:42:52.879Z",
+            "updated_date": "2019-08-29T12:42:52.879Z",
+            "inActive_from": null,
+            "_id": "5d6fa2d93e7cc229d0a67436",
+            "name": "AOL",
+            "url": "https://www.aol.com/rss/",
+            "__v": 0
+        },
+        {
+            "domain": "https://timesofindia.indiatimes.com/",
+            "logo": "https://static.toiimg.com/photo/45372282.cms",
+            "isActive": true,
+            "added_date": "2019-08-29T12:42:52.879Z",
+            "updated_date": "2019-08-29T12:42:52.879Z",
+            "inActive_from": null,
+            "_id": "5d6fa2f83e7cc229d0a67437",
+            "name": "TOI",
+            "url": "https://timesofindia.indiatimes.com/rssfeeds/2039512487.cms",
+            "__v": 0
+        },
+        {
+            "domain": "https://www.dailymail.co.uk/",
+            "logo": "https://i.dailymail.co.uk/i/sitelogos/logo_mol.gif",
+            "isActive": true,
+            "added_date": "2019-08-29T12:42:52.879Z",
+            "updated_date": "2019-08-29T12:42:52.879Z",
+            "inActive_from": null,
+            "_id": "5d6fa3063e7cc229d0a67438",
+            "name": "Daily Mail",
+            "url": "https://www.dailymail.co.uk/articles.rss",
+            "__v": 0
+        },
+        {
+            "domain": "https://www.scientificamerican.com",
+            "logo": "#",
+            "isActive": true,
+            "added_date": "2019-08-29T12:42:52.879Z",
+            "updated_date": "2019-08-29T12:42:52.879Z",
+            "inActive_from": null,
+            "_id": "5d6fa3a63e7cc229d0a67439",
+            "name": "Scientific American",
+            "url": "http://rss.sciam.com/ScientificAmerican-Global",
+            "__v": 0
+        },
+        {
+            "domain": "https://techcrunch.com/",
+            "logo": "#",
+            "isActive": true,
+            "added_date": "2019-08-29T12:42:52.879Z",
+            "updated_date": "2019-08-29T12:42:52.879Z",
+            "inActive_from": null,
+            "_id": "5d6fa3c33e7cc229d0a6743a",
+            "name": "Tech Crunch",
+            "url": "http://feeds.feedburner.com/TechCrunch/",
+            "__v": 0
+        }
+    ]

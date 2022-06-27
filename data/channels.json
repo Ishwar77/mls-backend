@@ -1,0 +1,52 @@
+[
+    {
+        "name": "AOL",
+        "url": "https://www.aol.com/rss/",
+        "domain": "https://www.aol.com/",
+        "logo": "https://s.blogsmithmedia.com/www.aol.com/assets-h7c67bd2d5994c7ee4182421f5f2a65ab/images/nav/aol-logo-black.svg?h=c8ffe034a0bf85df974064577b2cde76",
+        "isActive": true,
+        "added_date": "1567082572879",
+        "updated_date": "1567082572879",
+        "inActive_from": null
+    },
+    {
+        "name": "TOI",
+        "url": "https://timesofindia.indiatimes.com/rssfeeds/2039512487.cms",
+        "domain": "https://timesofindia.indiatimes.com/",
+        "logo": "https://static.toiimg.com/photo/45372282.cms",
+        "isActive": true,
+        "added_date": "1567082572879",
+        "updated_date": "1567082572879",
+        "inActive_from": null
+    },
+    {
+        "name": "Daily Mail",
+        "url": "https://www.dailymail.co.uk/articles.rss",
+        "domain": "https://www.dailymail.co.uk/",
+        "logo": "https://i.dailymail.co.uk/i/sitelogos/logo_mol.gif",
+        "isActive": true,
+        "added_date": "1567082572879",
+        "updated_date": "1567082572879",
+        "inActive_from": null
+    },
+    {
+        "name": "Tech Crunch",
+        "url": "http://feeds.feedburner.com/TechCrunch/",
+        "domain": "https://techcrunch.com/",
+        "logo": "#",
+        "isActive": true,
+        "added_date": "1567082572879",
+        "updated_date": "1567082572879",
+        "inActive_from": null
+    },
+    {
+        "name": "Scientific American",
+        "url": "http://rss.sciam.com/ScientificAmerican-Global",
+        "domain": "https://www.scientificamerican.com",
+        "logo": "#",
+        "isActive": true,
+        "added_date": "1567082572879",
+        "updated_date": "1567082572879",
+        "inActive_from": null
+    }
+]
